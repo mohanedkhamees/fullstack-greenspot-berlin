@@ -14,3 +14,12 @@ keine nachhaltige Infrastruktur besitzen
 als nicht-nachhaltig oder umweltfeindlich gelten
 
 Nutzer/innen sollen Problemstellen melden und mit Bildern versehen können, um Aufmerksamkeit zu schaffen und mögliche Verbesserungen anzuregen.
+
+
+## Projekt starten (Backend + Frontend)
+
+Um Backend und Frontend gleichzeitig zu starten:
+
+1. Im Hauptverzeichnis des Projekts (Root-Ordner) folgenden Befehl ausführen:
+   
+   npm run dev .
