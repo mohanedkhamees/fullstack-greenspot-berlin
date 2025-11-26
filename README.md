@@ -16,10 +16,24 @@ als nicht-nachhaltig oder umweltfeindlich gelten
 Nutzer/innen sollen Problemstellen melden und mit Bildern versehen können, um Aufmerksamkeit zu schaffen und mögliche Verbesserungen anzuregen.
 
 
-## Projekt starten (Backend + Frontend)
+## Installation
 
-Um Backend und Frontend gleichzeitig zu starten:
+Das Projekt besteht aus drei `npm`-Projekten:
 
-1. Im Hauptverzeichnis des Projekts (Root-Ordner) folgenden Befehl ausführen:
-   
-   npm run dev .
+- `backend/` – Node/Express Server
+- `frontend/` – React/Vite App
+- Projekt-Root – gemeinsame Tools (z.B. `concurrently`)
+
+### Einmalige Installation (nach dem Klonen)
+
+Im Terminal nacheinander ausführen:
+
+```bash
+cd backend
+npm install
+
+cd ../frontend
+npm install
+
+cd ..
+npm install    # Installation der Dev-Tools im Root (z.B. concurrently)
