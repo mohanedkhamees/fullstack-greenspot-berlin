@@ -1,18 +1,21 @@
-import { useState } from "react";
+import type { MouseEventHandler } from "react";
 
-interface Props {
-  label?: string;
+interface LikeButtonProps {
+  label: string;
+  count: number;
+  onClick: MouseEventHandler<HTMLButtonElement>;
+  className?: string;
 }
 
-export const LikeButton: React.FC<Props> = ({ label = "Like" }) => {
-  const [count, setCount] = useState<number>(0);
-
+export default function LikeButton({
+  label,
+  count,
+  onClick,
+  className,
+}: LikeButtonProps) {
   return (
-    <button
-      className="like-button"
-      onClick={() => setCount((prev) => prev + 1)}
-    >
+    <button type="button" onClick={onClick} className={className}>
       {label} ({count})
     </button>
   );
-};
+}
