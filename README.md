@@ -2,7 +2,6 @@ The WebsmithsProfi
 
 Team Members
 
-Nada Mohamed Shaaban Yassin Albialy (Matrikelnummer: s0595109)
 Mohaned Khamees (Matrikelnummer: s0594227)
 
 
