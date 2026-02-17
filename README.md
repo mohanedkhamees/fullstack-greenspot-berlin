@@ -44,10 +44,10 @@ Users can report problematic locations, attach images, and raise awareness for p
 
 ## Project Structure
 
-├── backend/ # Node.js / Express REST API
-├── frontend/ # React + Vite application
-├── package.json # Shared dev tools (e.g. concurrently)
-└── README.md
+─ backend/ # Node.js / Express REST API
+─ frontend/ # React + Vite application
+─ package.json # Shared dev tools (e.g. concurrently)
+─ README.md
 
 ## Installation
 
