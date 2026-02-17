@@ -1,53 +1,113 @@
-The WebsmithsProfi
+# GreenSpot Berlin
 
-Team Members
+GreenSpot Berlin is a fullstack web application for reporting and documenting unsustainable urban infrastructure in Berlin.
 
-Mohaned Khamees (Matrikelnummer: s0594227)
+Users can report problematic locations, attach images, and raise awareness for potential improvements in urban sustainability.
 
+---
 
-Description
-Diese Webanwendung wird im Rahmen des Semesterprojekts im FED-Kurs entwickelt.
-Ziel ist es, Orte in Berlin zu dokumentieren, die:
+## Tech Stack
 
-keine nachhaltige Infrastruktur besitzen
-als nicht-nachhaltig oder umweltfeindlich gelten
+### Frontend
 
-Nutzer/innen sollen Problemstellen melden und mit Bildern versehen können, um Aufmerksamkeit zu schaffen und mögliche Verbesserungen anzuregen.
+- React
+- Vite
+- JavaScript (ES6+)
+- Responsive UI
 
+### Backend
+
+- Node.js
+- Express
+- RESTful API
+- MongoDB
+- Cloudinary (image uploads)
+
+### Tools
+
+- Git & GitHub
+- npm
+- concurrently
+- dotenv
+
+---
+
+## Key Features
+
+- Create and view location-based reports
+- Upload images for reported locations
+- REST API for frontend-backend communication
+- Clean separation of frontend and backend
+- Environment-based configuration using `.env`
+
+---
+
+## Project Structure
+
+├── backend/ # Node.js / Express REST API
+├── frontend/ # React + Vite application
+├── package.json # Shared dev tools (e.g. concurrently)
+└── README.md
 
 ## Installation
 
-Das Projekt besteht aus drei `npm`-Projekten:
+The project consists of three npm projects:
 
-- `backend/` – Node/Express Server
-- `frontend/` – React/Vite App
-- Projekt-Root – gemeinsame Tools (z.B. `concurrently`)
+- `backend/` – Node.js / Express server
+- `frontend/` – React / Vite application
+- Project root – shared development tools (e.g. concurrently)
 
-### Einmalige Installation (nach dem Klonen)
-
-Im Terminal nacheinander ausführen:
+### One-time Setup
 
 ```bash
+
+## Backend
+
 cd backend
 npm install
+
+# Frontend
 
 cd ../frontend
 npm install
 
+## Root (dev tools)
+
 cd ..
-npm install    # Installation der Dev-Tools im Root (z.B. concurrently)
+npm install
 
-### Umgebungsvariablen konfigurieren
+```
 
-1. Kopieren Sie `backend/.env.example` zu `backend/.env`
-2. Füllen Sie die MongoDB-Verbindungsdaten aus
-3. Für Cloudinary (Bild-Upload):
-   - Erstellen Sie ein kostenloses Konto auf https://cloudinary.com
-   - Gehen Sie zu Dashboard → Settings
-   - Kopieren Sie `Cloud Name`, `API Key` und `API Secret`
-   - Fügen Sie diese in `backend/.env` ein:
-     ```
-     CLOUDINARY_CLOUD_NAME=ihr_cloud_name
-     CLOUDINARY_API_KEY=ihr_api_key
-     CLOUDINARY_API_SECRET=ihr_api_secret
-     ```
+## Environment Variables
+
+Copy backend/.env.example to backend/.env
+
+Configure MongoDB connection
+
+Configure Cloudinary credentials for image uploads:
+
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+
+## Running the Project (Development)
+
+From the project root:
+
+npm run dev
+
+This will start both frontend and backend concurrently.
+
+## Notes
+
+This project was developed in an academic context and demonstrates:
+
+Fullstack application architecture
+
+REST API design
+
+Frontend-backend integration
+
+Clean project structure
+
+Git-based development workflow.
